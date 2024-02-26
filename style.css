@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px, 150px; 
+}
+
+#navLink{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+#navLink > li{
+    position: relative;
+}
+
+#navLink > li::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: left;
+}
+
+#navLink > li:hover::after{
+    transform: scaleX(1)
+}
+body{
+    position: relative;
+}
+
+#description{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#container{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#imgBack{
+    background-color: wheat;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+#profileImg{
+    width: 100px;
+}
+#profileHead{
+    color: orangered;
+    font-family: cursive;
+}
+#profileText{
+    font-size: 30px;
+    text-align: center;
+}
+#profileTextBold{
+    font-weight: bold;
+    font-size: 36px;
+}
+
+#lastPara{
+    text-align: center;
+}
+
+#socials{
+    position: absolute;
+    top: 50%;
+    background-color: lightslategray;
+    padding: 30px;
+    left: 0;
+}
+#socialsContainer{
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.aLink{
+    text-decoration: none;
+    color:chartreuse;
+    font-weight: bold;
+}
